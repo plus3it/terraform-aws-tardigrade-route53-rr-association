@@ -1,5 +1,6 @@
 variable "create_resolver_rule_association" {
   description = "Controls whether to create the Route53 resolver rule association"
+  type        = bool
   default     = true
 }
 
