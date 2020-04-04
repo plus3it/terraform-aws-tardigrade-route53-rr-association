@@ -4,6 +4,12 @@ Terraform module to associate route53 resolver rules
 
 
 <!-- BEGIN TFDOCS -->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| terraform | >= 0.12 |
+
 ## Providers
 
 | Name | Version |
@@ -14,11 +20,11 @@ Terraform module to associate route53 resolver rules
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:-----:|
-| resolver\_rule\_id | ID of the rule to associate to the VPC | `string` | n/a | yes |
-| vpc\_id | ID of the VPC that will be associated to the rule | `string` | n/a | yes |
+|------|-------------|------|---------|:--------:|
 | create\_resolver\_rule\_association | Controls whether to create the Route53 resolver rule association | `bool` | `true` | no |
 | dependencies | List of resource dependencies to force terraform to wait until they are done | `list(string)` | `[]` | no |
+| resolver\_rule\_id | ID of the rule to associate to the VPC | `string` | `null` | no |
+| vpc\_id | ID of the VPC that will be associated to the rule | `string` | `null` | no |
 
 ## Outputs
 
