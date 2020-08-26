@@ -1,9 +1,3 @@
-variable "create_resolver_rule_association" {
-  description = "Controls whether to create the Route53 resolver rule association"
-  type        = bool
-  default     = true
-}
-
 variable "dependencies" {
   description = "List of resource dependencies to force terraform to wait until they are done"
   default     = []
