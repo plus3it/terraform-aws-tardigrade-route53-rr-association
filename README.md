@@ -8,7 +8,7 @@ Terraform module to associate route53 resolver rules
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.13 |
+| terraform | >= 0.12 |
 
 ## Providers
 
