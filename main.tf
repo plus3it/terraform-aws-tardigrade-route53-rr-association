@@ -1,6 +1,3 @@
-provider "aws" {
-}
-
 resource "null_resource" "dependencies" {
 
   triggers = {
