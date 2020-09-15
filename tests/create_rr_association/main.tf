@@ -15,6 +15,6 @@ module "create_rr_association" {
     aws = aws
   }
 
-  vpc_id                           = data.terraform_remote_state.prereq.outputs.vpc_id
-  resolver_rule_id                 = data.terraform_remote_state.prereq.outputs.resolver_rule_id
+  vpc_id           = data.terraform_remote_state.prereq.outputs.vpc_id
+  resolver_rule_id = data.terraform_remote_state.prereq.outputs.resolver_rule_id
 }
