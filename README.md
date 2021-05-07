@@ -8,27 +8,32 @@ Terraform module to associate route53 resolver rules
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | n/a |
-| null | n/a |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| <a name="provider_null"></a> [null](#provider\_null) | n/a |
+
+## Resources
+
+| Name | Type |
+|------|------|
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| dependencies | List of resource dependencies to force terraform to wait until they are done | `list(string)` | `[]` | no |
-| resolver\_rule\_id | ID of the rule to associate to the VPC | `string` | `null` | no |
-| vpc\_id | ID of the VPC that will be associated to the rule | `string` | `null` | no |
+| <a name="input_dependencies"></a> [dependencies](#input\_dependencies) | List of resource dependencies to force terraform to wait until they are done | `list(string)` | `[]` | no |
+| <a name="input_resolver_rule_id"></a> [resolver\_rule\_id](#input\_resolver\_rule\_id) | ID of the rule to associate to the VPC | `string` | `null` | no |
+| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | ID of the VPC that will be associated to the rule | `string` | `null` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| aws\_route53\_resolver\_rule\_association | ID of the resolver rule association |
+| <a name="output_aws_route53_resolver_rule_association"></a> [aws\_route53\_resolver\_rule\_association](#output\_aws\_route53\_resolver\_rule\_association) | ID of the resolver rule association |
 
 <!-- END TFDOCS -->
